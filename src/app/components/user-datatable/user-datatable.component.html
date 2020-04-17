@@ -1,0 +1,24 @@
+<div class="loader-container" *ngIf="isLoading">
+    <div class="loader"></div>
+</div>
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover table-container">
+        <thead *ngIf="!isLoading">
+            <tr class="row-style">
+                <th class="header-text">First name</th>
+                <th class="header-text">Last name</th>
+                <th class="header-text">Gender</th>
+                <th class="header-text">Email</th>
+                <th class="header-text">Phone</th>
+            </tr>
+
+        </thead>
+        <tbody *ngIf="!isLoading">
+            <tr *ngFor="let data of userData">
+                <td class="content-text">{{ data.name.first }}</td>
+                <td class="content-text">{{ data.name.last }}</td>
+                <td class="content-text">{{ data.gender }}</td>
+                <td class="content-text">{{ data.email }}</td>
+                <td class="content-text">{{ data.phone }}</td>
+            </tr>
+        </tbody>
+    </table>

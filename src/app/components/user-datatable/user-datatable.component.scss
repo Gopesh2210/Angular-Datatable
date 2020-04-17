@@ -1,0 +1,47 @@
+.row-style{
+    background-color: black;
+}
+
+.header-text{
+    font-size: 1.25em;
+    color: white;
+}
+
+.content-text{
+    font-size: 0.85em;
+}
+
+.loader-container{
+    text-align: center;
+}
+
+.table-container{
+    text-align: center;
+}
+
+// CSS Loader
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 4em;
+    height: 4em;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
